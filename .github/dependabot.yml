@@ -11,6 +11,8 @@ updates:
     assignees:
       - pva2007
     versioning-strategy: increase
+    cooldown:
+      default: 7
 
   - package-ecosystem: github-actions
     directory: "/"

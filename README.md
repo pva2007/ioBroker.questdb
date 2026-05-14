@@ -49,13 +49,6 @@ Install via the ioBroker Admin UI:
 2. Search for **QuestDB**
 3. Click **Install**
 
-Or from the command line:
-
-```sh
-cd /opt/iobroker
-iobroker add questdb
-```
-
 ---
 
 ## QuestDB Setup

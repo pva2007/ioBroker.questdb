@@ -18,18 +18,6 @@
             "0.3.1": {
                 "en": "Initial GitHub/npm community release; added info.connection state; switched to MIT license; full ioBroker developer guide compliance",
                 "de": "Erste GitHub/npm Community-Veröffentlichung; info.connection-Status hinzugefügt; auf MIT-Lizenz umgestellt; vollständige ioBroker-Entwicklerrichtlinien-Konformität"
-            },
-            "0.3.0": {
-                "en": "HTTPS protocol support; insecure TLS option for private CAs; global flush interval for batching ILP writes; improved test connection feedback; fix non-compact mode startup",
-                "de": "HTTPS-Protokoll; Option zum Überspringen der TLS-Prüfung für private CAs; globaler Flush-Intervall zum Bündeln von ILP-Schreibvorgängen; verbesserte Test-Connection-Rückmeldung; Fix für Non-Compact-Mode-Start"
-            },
-            "0.2.0": {
-                "en": "Wide-table mapping: map multiple states to named columns in a shared QuestDB table",
-                "de": "Wide-Table-Mapping: Mehrere Zustände als benannte Spalten in einer gemeinsamen QuestDB-Tabelle speichern"
-            },
-            "0.1.0": {
-                "en": "Initial release",
-                "de": "Erste Version"
             }
         },
         "titleLang": {
@@ -91,19 +79,19 @@
             "config": "json",
             "custom": "json"
         },
-        "nativeEncrypted": ["password"],
-        "protectedNative": ["password"],
         "dependencies": [
             {
-                "js-controller": ">=5.0.0"
+                "js-controller": ">=6.0.11"
             }
         ],
         "globalDependencies": [
             {
-                "admin": ">=7.0.23"
+                "admin": ">=7.6.20"
             }
         ]
     },
+    "nativeEncrypted": ["password"],
+    "protectedNative": ["password"],
     "native": {
         "host": "localhost",
         "port": 9000,
