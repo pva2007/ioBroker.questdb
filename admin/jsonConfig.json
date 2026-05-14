@@ -54,6 +54,9 @@
             "command": "testConnection",
             "label": "Test Connection",
             "variant": "contained",
+            "jsonData": "{\"protocol\":\"${data.protocol}\",\"host\":\"${data.host}\",\"port\":${data.port},\"username\":\"${data.username}\",\"password\":\"${data.password}\",\"insecureTls\":${data.insecureTls},\"dbWriteTimeout\":${data.dbWriteTimeout}}",
+            "result": "result",
+            "error": "error",
             "xs": 12,
             "sm": 6
         },

@@ -1,8 +1,21 @@
 {
     "common": {
         "name": "questdb",
-        "version": "0.3.5",
+        "version": "0.3.6",
         "news": {
+            "0.3.6": {
+                "en": "Fix Test Connection crash when message payload is null; send current form values to adapter for testing",
+                "de": "Absturz bei Test Connection behoben wenn Payload null ist; aktuelle Formularwerte werden zum Test an den Adapter übermittelt",
+                "ru": "Исправлен сбой Test Connection при null payload; текущие значения формы передаются адаптеру для теста",
+                "pt": "Correção de crash no Test Connection quando payload é null; valores do formulário enviados ao adaptador",
+                "nl": "Crash bij Test Connection opgelost bij null payload; huidige formulierwaarden worden naar adapter gestuurd",
+                "fr": "Correction du crash Test Connection quand le payload est null ; valeurs du formulaire envoyées à l'adaptateur",
+                "it": "Correzione crash Test Connection con payload null; valori del form inviati all'adapter per il test",
+                "es": "Corrección de crash en Test Connection con payload null; valores del formulario enviados al adaptador",
+                "pl": "Naprawa awarii Test Connection przy null payload; wartości formularza wysyłane do adaptera",
+                "uk": "Виправлення збою Test Connection при null payload; поточні значення форми передаються адаптеру",
+                "zh-cn": "修复 Test Connection 在 payload 为 null 时崩溃；将表单当前值发送至适配器进行测试"
+            },
             "0.3.5": {
                 "en": "Fix io-package.json: correct encryptedNative/protectedNative placement; add multilingual news; fix dependabot and workflow configs",
                 "de": "io-package.json korrigiert: encryptedNative/protectedNative richtig platziert; mehrsprachige News; dependabot und Workflow-Konfigurationen korrigiert",

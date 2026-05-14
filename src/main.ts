@@ -177,7 +177,8 @@ class QuestdbAdapter extends utils.Adapter {
 
     private onMessage(obj: ioBroker.Message): void {
         if (!obj || obj.command !== 'testConnection') return;
-        const config = obj.message as AdapterConfig;
+        const config: AdapterConfig =
+            obj.message && typeof obj.message === 'object' ? (obj.message as AdapterConfig) : this.cfg;
         QuestDbClient.testConnection(config)
             .then(() => {
                 this.sendTo(

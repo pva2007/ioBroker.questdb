@@ -199,6 +199,10 @@ SAMPLE BY 1h ALIGN TO CALENDAR;
     ### **WORK IN PROGRESS**
 -->
 
+### 0.3.6 (2026-05-14)
+* Fix Test Connection crash when admin sends null message payload
+* Send current form values to adapter so unsaved changes can be tested
+
 ### 0.3.5 (2026-05-14)
 * Fix `encryptedNative`/`protectedNative` field placement in io-package.json
 * Add multilingual news translations (ru, pt, nl, fr, it, es, pl, uk, zh-cn)
