@@ -35,8 +35,8 @@ Stores ioBroker state history in a [QuestDB](https://questdb.io) time-series dat
 | Requirement | Version |
 |---|---|
 | Node.js | ≥ 20.0.0 |
-| ioBroker js-controller | ≥ 5.0.0 |
-| ioBroker Admin | ≥ 7.0.23 |
+| ioBroker js-controller | ≥ 6.0.11 |
+| ioBroker Admin | ≥ 7.6.20 |
 | QuestDB | ≥ 7.0 |
 
 ---
