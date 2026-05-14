@@ -206,6 +206,9 @@ SAMPLE BY 1h ALIGN TO CALENDAR;
     ### **WORK IN PROGRESS**
 -->
 
+### 0.3.3 (2026-05-14)
+* Enable automated npm publishing via GitHub Actions trusted publishing
+
 ### 0.3.2 (2026-05-14)
 * Fix CI: enable TypeScript build step and add test:unit alias for testing-action
 

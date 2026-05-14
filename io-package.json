@@ -1,8 +1,12 @@
 {
     "common": {
         "name": "questdb",
-        "version": "0.3.2",
+        "version": "0.3.3",
         "news": {
+            "0.3.3": {
+                "en": "Enable automated npm publishing via GitHub Actions trusted publishing",
+                "de": "Automatische npm-Veröffentlichung via GitHub Actions Trusted Publishing aktiviert"
+            },
             "0.3.2": {
                 "en": "Fix CI: enable TypeScript build step and add test:unit alias for testing-action",
                 "de": "CI-Fix: TypeScript-Build-Schritt aktiviert und test:unit-Alias für testing-action ergänzt"
