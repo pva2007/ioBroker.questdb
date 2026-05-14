@@ -1,0 +1,27 @@
+{
+    "i18n": true,
+    "type": "panel",
+    "items": {
+        "enabled": {
+            "type": "checkbox",
+            "label": "Store in QuestDB",
+            "default": false,
+            "xs": 12
+        },
+        "alias": {
+            "type": "text",
+            "label": "Table name alias (empty = use sanitized state ID)",
+            "default": "",
+            "xs": 12,
+            "hidden": "!data.enabled"
+        },
+        "debounceMs": {
+            "type": "number",
+            "label": "Debounce override (ms, -1 = use instance default)",
+            "default": -1,
+            "min": -1,
+            "xs": 12,
+            "hidden": "!data.enabled"
+        }
+    }
+}

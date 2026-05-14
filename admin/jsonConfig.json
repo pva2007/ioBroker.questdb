@@ -1,0 +1,150 @@
+{
+    "i18n": true,
+    "type": "panel",
+    "items": {
+        "connectionHeader": {
+            "type": "header",
+            "text": "Connection",
+            "size": 3
+        },
+        "protocol": {
+            "type": "select",
+            "label": "Protocol",
+            "options": [
+                { "label": "HTTP (port 9000, recommended)", "value": "http" },
+                { "label": "HTTPS (port 443, behind reverse proxy)", "value": "https" },
+                { "label": "TCP (port 9009, high throughput)", "value": "tcp" }
+            ],
+            "default": "http",
+            "xs": 12,
+            "sm": 6
+        },
+        "host": {
+            "type": "text",
+            "label": "Host",
+            "default": "localhost",
+            "xs": 12,
+            "sm": 6
+        },
+        "port": {
+            "type": "number",
+            "label": "Port",
+            "default": 9000,
+            "min": 1,
+            "max": 65535,
+            "xs": 12,
+            "sm": 6
+        },
+        "username": {
+            "type": "text",
+            "label": "Username",
+            "default": "",
+            "xs": 12,
+            "sm": 6
+        },
+        "password": {
+            "type": "password",
+            "label": "Password",
+            "default": "",
+            "xs": 12,
+            "sm": 6
+        },
+        "testConnection": {
+            "type": "sendTo",
+            "command": "testConnection",
+            "label": "Test Connection",
+            "variant": "contained",
+            "xs": 12,
+            "sm": 6
+        },
+        "insecureTls": {
+            "type": "checkbox",
+            "label": "Skip TLS certificate verification (insecure — only for self-signed/private CA)",
+            "default": false,
+            "hidden": "data.protocol !== 'https'",
+            "xs": 12
+        },
+        "writingHeader": {
+            "type": "header",
+            "text": "Write Behavior",
+            "size": 3
+        },
+        "writeOnlyAcknowledged": {
+            "type": "checkbox",
+            "label": "Write only acknowledged states",
+            "default": true,
+            "xs": 12
+        },
+        "debounceMs": {
+            "type": "number",
+            "label": "Debounce interval (ms, 0 = disabled)",
+            "default": 0,
+            "min": 0,
+            "xs": 12,
+            "sm": 6
+        },
+        "maxBatchSize": {
+            "type": "number",
+            "label": "Max batch size (force-flush threshold)",
+            "default": 1000,
+            "min": 1,
+            "xs": 12,
+            "sm": 6
+        },
+        "flushIntervalMs": {
+            "type": "number",
+            "label": "Flush interval (ms, 0 = only flush at max batch size)",
+            "help": "Collect rows and push them to QuestDB on this interval. Larger values = larger batches = better QuestDB throughput.",
+            "default": 5000,
+            "min": 0,
+            "xs": 12,
+            "sm": 6
+        },
+        "reconnectIntervalMs": {
+            "type": "number",
+            "label": "Reconnect interval (ms)",
+            "default": 30000,
+            "min": 1000,
+            "xs": 12,
+            "sm": 6
+        },
+        "dbWriteTimeout": {
+            "type": "number",
+            "label": "Write timeout (ms)",
+            "default": 10000,
+            "min": 1000,
+            "xs": 12,
+            "sm": 6
+        },
+        "wideMappingHeader": {
+            "type": "header",
+            "text": "Wide-table Mappings (optional)",
+            "size": 3
+        },
+        "tableMappings": {
+            "type": "table",
+            "label": "Map ioBroker states to a shared QuestDB table with named columns",
+            "xs": 12,
+            "items": [
+                {
+                    "title": "State ID (e.g. zigbee.0.sensor.temperature)",
+                    "attr": "stateId",
+                    "type": "text",
+                    "width": "45%"
+                },
+                {
+                    "title": "QuestDB table",
+                    "attr": "table",
+                    "type": "text",
+                    "width": "27%"
+                },
+                {
+                    "title": "Column name",
+                    "attr": "column",
+                    "type": "text",
+                    "width": "28%"
+                }
+            ]
+        }
+    }
+}
