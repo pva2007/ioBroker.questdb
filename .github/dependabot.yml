@@ -4,10 +4,9 @@ updates:
     directory: "/"
     schedule:
       interval: monthly
-      day: 21
       time: "00:05"
       timezone: Europe/Berlin
-    open-pull-requests-limit: 5
+    open-pull-requests-limit: 15
     assignees:
       - pva2007
     versioning-strategy: increase
@@ -18,9 +17,8 @@ updates:
     directory: "/"
     schedule:
       interval: monthly
-      day: 21
       time: "00:05"
       timezone: Europe/Berlin
-    open-pull-requests-limit: 5
+    open-pull-requests-limit: 15
     assignees:
       - pva2007

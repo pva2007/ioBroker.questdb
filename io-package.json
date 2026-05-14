@@ -5,19 +5,55 @@
         "news": {
             "0.3.4": {
                 "en": "Fix npm publish: pass npm-token to testing-action-deploy",
-                "de": "npm-Veröffentlichung korrigiert: npm-token an testing-action-deploy übergeben"
+                "de": "npm-Veröffentlichung korrigiert: npm-token an testing-action-deploy übergeben",
+                "ru": "Исправлена публикация npm: передача npm-token в testing-action-deploy",
+                "pt": "Correção da publicação npm: passar npm-token para testing-action-deploy",
+                "nl": "npm-publicatie hersteld: npm-token doorgeven aan testing-action-deploy",
+                "fr": "Correction de la publication npm : passer npm-token à testing-action-deploy",
+                "it": "Correzione pubblicazione npm: passare npm-token a testing-action-deploy",
+                "es": "Corrección de publicación npm: pasar npm-token a testing-action-deploy",
+                "pl": "Naprawa publikacji npm: przekazanie npm-token do testing-action-deploy",
+                "uk": "Виправлення публікації npm: передача npm-token до testing-action-deploy",
+                "zh-cn": "修复 npm 发布：将 npm-token 传递给 testing-action-deploy"
             },
             "0.3.3": {
                 "en": "Enable automated npm publishing via GitHub Actions trusted publishing",
-                "de": "Automatische npm-Veröffentlichung via GitHub Actions Trusted Publishing aktiviert"
+                "de": "Automatische npm-Veröffentlichung via GitHub Actions Trusted Publishing aktiviert",
+                "ru": "Включена автоматическая публикация npm через доверенную публикацию GitHub Actions",
+                "pt": "Publicação npm automatizada via publicação confiável do GitHub Actions",
+                "nl": "Geautomatiseerde npm-publicatie via GitHub Actions trusted publishing ingeschakeld",
+                "fr": "Publication npm automatisée via la publication approuvée de GitHub Actions",
+                "it": "Pubblicazione npm automatizzata tramite trusted publishing di GitHub Actions",
+                "es": "Publicación npm automatizada mediante publicación de confianza de GitHub Actions",
+                "pl": "Włączono automatyczną publikację npm przez trusted publishing GitHub Actions",
+                "uk": "Увімкнено автоматичну публікацію npm через довірену публікацію GitHub Actions",
+                "zh-cn": "通过 GitHub Actions 可信发布启用自动 npm 发布"
             },
             "0.3.2": {
                 "en": "Fix CI: enable TypeScript build step and add test:unit alias for testing-action",
-                "de": "CI-Fix: TypeScript-Build-Schritt aktiviert und test:unit-Alias für testing-action ergänzt"
+                "de": "CI-Fix: TypeScript-Build-Schritt aktiviert und test:unit-Alias für testing-action ergänzt",
+                "ru": "Исправление CI: включён шаг сборки TypeScript и добавлен псевдоним test:unit",
+                "pt": "Correção CI: etapa de build TypeScript e alias test:unit para testing-action",
+                "nl": "CI-fix: TypeScript build-stap ingeschakeld en test:unit alias toegevoegd",
+                "fr": "Correction CI : étape de build TypeScript et alias test:unit pour testing-action",
+                "it": "Fix CI: abilitato step di build TypeScript e aggiunto alias test:unit",
+                "es": "Corrección CI: paso de compilación TypeScript y alias test:unit para testing-action",
+                "pl": "Naprawa CI: włączony krok budowania TypeScript i dodano alias test:unit",
+                "uk": "Виправлення CI: увімкнено крок збірки TypeScript і додано псевдонім test:unit",
+                "zh-cn": "修复 CI：启用 TypeScript 构建步骤并为 testing-action 添加 test:unit 别名"
             },
             "0.3.1": {
                 "en": "Initial GitHub/npm community release; added info.connection state; switched to MIT license; full ioBroker developer guide compliance",
-                "de": "Erste GitHub/npm Community-Veröffentlichung; info.connection-Status hinzugefügt; auf MIT-Lizenz umgestellt; vollständige ioBroker-Entwicklerrichtlinien-Konformität"
+                "de": "Erste GitHub/npm Community-Veröffentlichung; info.connection-Status hinzugefügt; auf MIT-Lizenz umgestellt; vollständige ioBroker-Entwicklerrichtlinien-Konformität",
+                "ru": "Первый релиз на GitHub/npm; добавлено состояние info.connection; лицензия MIT; соответствие руководству разработчика ioBroker",
+                "pt": "Primeiro lançamento no GitHub/npm; estado info.connection adicionado; licença MIT; conformidade com o guia do desenvolvedor ioBroker",
+                "nl": "Eerste GitHub/npm community release; info.connection state toegevoegd; MIT-licentie; ioBroker developer guide conformiteit",
+                "fr": "Première version GitHub/npm; état info.connection ajouté; licence MIT; conformité au guide développeur ioBroker",
+                "it": "Prima release GitHub/npm; stato info.connection aggiunto; licenza MIT; conformità alla guida per sviluppatori ioBroker",
+                "es": "Primera versión GitHub/npm; estado info.connection añadido; licencia MIT; cumplimiento de la guía del desarrollador ioBroker",
+                "pl": "Pierwsze wydanie GitHub/npm; dodano stan info.connection; licencja MIT; zgodność z przewodnikiem programisty ioBroker",
+                "uk": "Перший реліз GitHub/npm; додано стан info.connection; ліцензія MIT; відповідність керівництву розробника ioBroker",
+                "zh-cn": "首次 GitHub/npm 社区发布；添加 info.connection 状态；切换至 MIT 许可证；完全符合 ioBroker 开发者指南"
             }
         },
         "titleLang": {
@@ -61,7 +97,6 @@
             "license": "MIT"
         },
         "platform": "Javascript/Node.js",
-        "main": "index.js",
         "icon": "questdb.png",
         "enabled": true,
         "extIcon": "https://raw.githubusercontent.com/pva2007/ioBroker.questdb/main/admin/questdb.png",
@@ -79,6 +114,8 @@
             "config": "json",
             "custom": "json"
         },
+        "encryptedNative": ["password"],
+        "protectedNative": ["password"],
         "dependencies": [
             {
                 "js-controller": ">=6.0.11"
@@ -90,8 +127,6 @@
             }
         ]
     },
-    "nativeEncrypted": ["password"],
-    "protectedNative": ["password"],
     "native": {
         "host": "localhost",
         "port": 9000,
