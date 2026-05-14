@@ -1,8 +1,12 @@
 {
     "common": {
         "name": "questdb",
-        "version": "0.3.3",
+        "version": "0.3.4",
         "news": {
+            "0.3.4": {
+                "en": "Fix npm publish: pass npm-token to testing-action-deploy",
+                "de": "npm-Veröffentlichung korrigiert: npm-token an testing-action-deploy übergeben"
+            },
             "0.3.3": {
                 "en": "Enable automated npm publishing via GitHub Actions trusted publishing",
                 "de": "Automatische npm-Veröffentlichung via GitHub Actions Trusted Publishing aktiviert"

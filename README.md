@@ -206,6 +206,9 @@ SAMPLE BY 1h ALIGN TO CALENDAR;
     ### **WORK IN PROGRESS**
 -->
 
+### 0.3.4 (2026-05-14)
+* Fix npm publish: pass npm-token to testing-action-deploy
+
 ### 0.3.3 (2026-05-14)
 * Enable automated npm publishing via GitHub Actions trusted publishing
 
