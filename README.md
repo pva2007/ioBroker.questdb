@@ -206,6 +206,9 @@ SAMPLE BY 1h ALIGN TO CALENDAR;
     ### **WORK IN PROGRESS**
 -->
 
+### 0.3.2 (2026-05-14)
+* Fix CI: enable TypeScript build step and add test:unit alias for testing-action
+
 ### 0.3.1 (2026-05-14)
 * Initial GitHub/npm community release
 * Added `info.connection` state for connection status tracking

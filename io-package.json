@@ -1,8 +1,12 @@
 {
     "common": {
         "name": "questdb",
-        "version": "0.3.1",
+        "version": "0.3.2",
         "news": {
+            "0.3.2": {
+                "en": "Fix CI: enable TypeScript build step and add test:unit alias for testing-action",
+                "de": "CI-Fix: TypeScript-Build-Schritt aktiviert und test:unit-Alias für testing-action ergänzt"
+            },
             "0.3.1": {
                 "en": "Initial GitHub/npm community release; added info.connection state; switched to MIT license; full ioBroker developer guide compliance",
                 "de": "Erste GitHub/npm Community-Veröffentlichung; info.connection-Status hinzugefügt; auf MIT-Lizenz umgestellt; vollständige ioBroker-Entwicklerrichtlinien-Konformität"
