@@ -199,6 +199,14 @@ SAMPLE BY 1h ALIGN TO CALENDAR;
     ### **WORK IN PROGRESS**
 -->
 
+### 0.3.5 (2026-05-14)
+* Fix `encryptedNative`/`protectedNative` field placement in io-package.json
+* Add multilingual news translations (ru, pt, nl, fr, it, es, pl, uk, zh-cn)
+* Fix dependabot config: remove invalid `day` setting, increase PR limit to 15
+* Rename automerge workflow to standard `automerge-dependabot.yml`
+* Add `needs: check-and-lint` gate to adapter-tests job
+* Add `.vscode/settings.json` with JSON schema definitions
+
 ### 0.3.4 (2026-05-14)
 * Fix npm publish: pass npm-token to testing-action-deploy
 
@@ -233,7 +241,7 @@ SAMPLE BY 1h ALIGN TO CALENDAR;
 
 MIT License
 
-Copyright (c) 2026 pva2007 <github@valicek.de>
+Copyright (c) 2026 pva2007 <ioBroker.questdb@noreply.github.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

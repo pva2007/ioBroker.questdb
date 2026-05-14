@@ -1,8 +1,21 @@
 {
     "common": {
         "name": "questdb",
-        "version": "0.3.4",
+        "version": "0.3.5",
         "news": {
+            "0.3.5": {
+                "en": "Fix io-package.json: correct encryptedNative/protectedNative placement; add multilingual news; fix dependabot and workflow configs",
+                "de": "io-package.json korrigiert: encryptedNative/protectedNative richtig platziert; mehrsprachige News; dependabot und Workflow-Konfigurationen korrigiert",
+                "ru": "Исправлен io-package.json: правильное размещение encryptedNative/protectedNative; многоязычные новости; исправлены dependabot и рабочие процессы",
+                "pt": "Corrigido io-package.json: posicionamento correto de encryptedNative/protectedNative; notícias multilíngues; correções de dependabot e workflows",
+                "nl": "io-package.json gecorrigeerd: juiste plaatsing van encryptedNative/protectedNative; meertalige nieuws; dependabot en workflow-configuraties gecorrigeerd",
+                "fr": "Correction io-package.json : placement correct de encryptedNative/protectedNative ; actualités multilingues ; corrections dependabot et workflows",
+                "it": "Corretto io-package.json: posizionamento corretto di encryptedNative/protectedNative; notizie multilingue; correzioni dependabot e workflow",
+                "es": "Corregido io-package.json: posición correcta de encryptedNative/protectedNative; noticias multilingües; correcciones de dependabot y workflows",
+                "pl": "Poprawiono io-package.json: właściwe rozmieszczenie encryptedNative/protectedNative; wielojęzyczne aktualności; poprawki dependabot i workflow",
+                "uk": "Виправлено io-package.json: правильне розміщення encryptedNative/protectedNative; багатомовні новини; виправлення dependabot і workflow",
+                "zh-cn": "修复 io-package.json：正确放置 encryptedNative/protectedNative；多语言新闻；修复 dependabot 和工作流配置"
+            },
             "0.3.4": {
                 "en": "Fix npm publish: pass npm-token to testing-action-deploy",
                 "de": "npm-Veröffentlichung korrigiert: npm-token an testing-action-deploy übergeben",
