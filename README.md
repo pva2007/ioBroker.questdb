@@ -199,6 +199,12 @@ SAMPLE BY 1h ALIGN TO CALENDAR;
     ### **WORK IN PROGRESS**
 -->
 
+### 0.3.7 (2026-05-15)
+* Fix `encryptedNative`/`protectedNative` placement — must be top-level in io-package.json, not inside `common`
+* Add `md`/`lg`/`xl` responsive size attributes to admin UI connection fields
+* Fix schema URLs in `.vscode/settings.json` for io-package.json and jsonConfig files
+* Add complete i18n translations for all 9 languages (ru, uk, es, fr, it, nl, pl, pt, zh-cn)
+
 ### 0.3.6 (2026-05-14)
 * Fix Test Connection crash when admin sends null message payload
 * Send current form values to adapter so unsaved changes can be tested

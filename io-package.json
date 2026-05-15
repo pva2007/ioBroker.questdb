@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "questdb",
-    "version": "0.3.6",
+    "version": "0.3.7",
     "news": {
+      "0.3.7": {
+        "en": "Fix adapter checker errors: correct encryptedNative/protectedNative placement; add responsive sizes to admin UI; fix schema URLs; add full i18n translations",
+        "de": "Adapter-Checker-Fehler behoben: encryptedNative/protectedNative korrekt platziert; responsive Größen in Admin-UI; Schema-URLs korrigiert; vollständige i18n-Übersetzungen",
+        "ru": "Исправлены ошибки проверки адаптера: корректное размещение encryptedNative/protectedNative; адаптивные размеры в UI; исправлены URL схем; полные переводы i18n",
+        "pt": "Correção de erros do verificador: posicionamento correto de encryptedNative/protectedNative; tamanhos responsivos na UI; URLs de esquema corrigidos; traduções i18n completas",
+        "nl": "Adapter checker fouten opgelost: juiste plaatsing encryptedNative/protectedNative; responsieve maten in admin UI; schema URL's gecorrigeerd; volledige i18n vertalingen",
+        "fr": "Corrections erreurs checker : placement correct encryptedNative/protectedNative ; tailles responsives dans l'UI ; URL de schémas corrigées ; traductions i18n complètes",
+        "it": "Correzione errori checker: posizionamento corretto encryptedNative/protectedNative; dimensioni responsive nell'UI; URL schema corretti; traduzioni i18n complete",
+        "es": "Corrección errores checker: posición correcta encryptedNative/protectedNative; tamaños responsivos en UI; URLs de esquema corregidas; traducciones i18n completas",
+        "pl": "Naprawa błędów checkera: właściwe rozmieszczenie encryptedNative/protectedNative; responsywne rozmiary w UI; poprawione URL schematów; pełne tłumaczenia i18n",
+        "uk": "Виправлення помилок перевірки: правильне розміщення encryptedNative/protectedNative; адаптивні розміри в UI; виправлено URL схем; повні переклади i18n",
+        "zh-cn": "修复适配器检查错误：正确放置 encryptedNative/protectedNative；管理界面响应式尺寸；修复架构 URL；完整 i18n 翻译"
+      },
       "0.3.6": {
         "en": "Fix Test Connection crash when message payload is null; send current form values to adapter for testing",
         "de": "Absturz bei Test Connection behoben wenn Payload null ist; aktuelle Formularwerte werden zum Test an den Adapter übermittelt",

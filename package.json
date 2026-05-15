@@ -1,6 +1,6 @@
 {
   "name": "iobroker.questdb",
-  "version": "0.3.6",
+  "version": "0.3.7",
   "description": "Stores ioBroker state history in a QuestDB time-series database. Each enabled datapoint gets its own QuestDB table, written via the InfluxDB Line Protocol (ILP) over HTTP, HTTPS, or TCP.",
   "author": {
     "name": "pva2007",
