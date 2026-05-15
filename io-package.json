@@ -1,195 +1,135 @@
 {
-    "common": {
-        "name": "questdb",
-        "version": "0.3.6",
-        "news": {
-            "0.3.6": {
-                "en": "Fix Test Connection crash when message payload is null; send current form values to adapter for testing",
-                "de": "Absturz bei Test Connection behoben wenn Payload null ist; aktuelle Formularwerte werden zum Test an den Adapter übermittelt",
-                "ru": "Исправлен сбой Test Connection при null payload; текущие значения формы передаются адаптеру для теста",
-                "pt": "Correção de crash no Test Connection quando payload é null; valores do formulário enviados ao adaptador",
-                "nl": "Crash bij Test Connection opgelost bij null payload; huidige formulierwaarden worden naar adapter gestuurd",
-                "fr": "Correction du crash Test Connection quand le payload est null ; valeurs du formulaire envoyées à l'adaptateur",
-                "it": "Correzione crash Test Connection con payload null; valori del form inviati all'adapter per il test",
-                "es": "Corrección de crash en Test Connection con payload null; valores del formulario enviados al adaptador",
-                "pl": "Naprawa awarii Test Connection przy null payload; wartości formularza wysyłane do adaptera",
-                "uk": "Виправлення збою Test Connection при null payload; поточні значення форми передаються адаптеру",
-                "zh-cn": "修复 Test Connection 在 payload 为 null 时崩溃；将表单当前值发送至适配器进行测试"
-            },
-            "0.3.5": {
-                "en": "Fix io-package.json: correct encryptedNative/protectedNative placement; add multilingual news; fix dependabot and workflow configs",
-                "de": "io-package.json korrigiert: encryptedNative/protectedNative richtig platziert; mehrsprachige News; dependabot und Workflow-Konfigurationen korrigiert",
-                "ru": "Исправлен io-package.json: правильное размещение encryptedNative/protectedNative; многоязычные новости; исправлены dependabot и рабочие процессы",
-                "pt": "Corrigido io-package.json: posicionamento correto de encryptedNative/protectedNative; notícias multilíngues; correções de dependabot e workflows",
-                "nl": "io-package.json gecorrigeerd: juiste plaatsing van encryptedNative/protectedNative; meertalige nieuws; dependabot en workflow-configuraties gecorrigeerd",
-                "fr": "Correction io-package.json : placement correct de encryptedNative/protectedNative ; actualités multilingues ; corrections dependabot et workflows",
-                "it": "Corretto io-package.json: posizionamento corretto di encryptedNative/protectedNative; notizie multilingue; correzioni dependabot e workflow",
-                "es": "Corregido io-package.json: posición correcta de encryptedNative/protectedNative; noticias multilingües; correcciones de dependabot y workflows",
-                "pl": "Poprawiono io-package.json: właściwe rozmieszczenie encryptedNative/protectedNative; wielojęzyczne aktualności; poprawki dependabot i workflow",
-                "uk": "Виправлено io-package.json: правильне розміщення encryptedNative/protectedNative; багатомовні новини; виправлення dependabot і workflow",
-                "zh-cn": "修复 io-package.json：正确放置 encryptedNative/protectedNative；多语言新闻；修复 dependabot 和工作流配置"
-            },
-            "0.3.4": {
-                "en": "Fix npm publish: pass npm-token to testing-action-deploy",
-                "de": "npm-Veröffentlichung korrigiert: npm-token an testing-action-deploy übergeben",
-                "ru": "Исправлена публикация npm: передача npm-token в testing-action-deploy",
-                "pt": "Correção da publicação npm: passar npm-token para testing-action-deploy",
-                "nl": "npm-publicatie hersteld: npm-token doorgeven aan testing-action-deploy",
-                "fr": "Correction de la publication npm : passer npm-token à testing-action-deploy",
-                "it": "Correzione pubblicazione npm: passare npm-token a testing-action-deploy",
-                "es": "Corrección de publicación npm: pasar npm-token a testing-action-deploy",
-                "pl": "Naprawa publikacji npm: przekazanie npm-token do testing-action-deploy",
-                "uk": "Виправлення публікації npm: передача npm-token до testing-action-deploy",
-                "zh-cn": "修复 npm 发布：将 npm-token 传递给 testing-action-deploy"
-            },
-            "0.3.3": {
-                "en": "Enable automated npm publishing via GitHub Actions trusted publishing",
-                "de": "Automatische npm-Veröffentlichung via GitHub Actions Trusted Publishing aktiviert",
-                "ru": "Включена автоматическая публикация npm через доверенную публикацию GitHub Actions",
-                "pt": "Publicação npm automatizada via publicação confiável do GitHub Actions",
-                "nl": "Geautomatiseerde npm-publicatie via GitHub Actions trusted publishing ingeschakeld",
-                "fr": "Publication npm automatisée via la publication approuvée de GitHub Actions",
-                "it": "Pubblicazione npm automatizzata tramite trusted publishing di GitHub Actions",
-                "es": "Publicación npm automatizada mediante publicación de confianza de GitHub Actions",
-                "pl": "Włączono automatyczną publikację npm przez trusted publishing GitHub Actions",
-                "uk": "Увімкнено автоматичну публікацію npm через довірену публікацію GitHub Actions",
-                "zh-cn": "通过 GitHub Actions 可信发布启用自动 npm 发布"
-            },
-            "0.3.2": {
-                "en": "Fix CI: enable TypeScript build step and add test:unit alias for testing-action",
-                "de": "CI-Fix: TypeScript-Build-Schritt aktiviert und test:unit-Alias für testing-action ergänzt",
-                "ru": "Исправление CI: включён шаг сборки TypeScript и добавлен псевдоним test:unit",
-                "pt": "Correção CI: etapa de build TypeScript e alias test:unit para testing-action",
-                "nl": "CI-fix: TypeScript build-stap ingeschakeld en test:unit alias toegevoegd",
-                "fr": "Correction CI : étape de build TypeScript et alias test:unit pour testing-action",
-                "it": "Fix CI: abilitato step di build TypeScript e aggiunto alias test:unit",
-                "es": "Corrección CI: paso de compilación TypeScript y alias test:unit para testing-action",
-                "pl": "Naprawa CI: włączony krok budowania TypeScript i dodano alias test:unit",
-                "uk": "Виправлення CI: увімкнено крок збірки TypeScript і додано псевдонім test:unit",
-                "zh-cn": "修复 CI：启用 TypeScript 构建步骤并为 testing-action 添加 test:unit 别名"
-            },
-            "0.3.1": {
-                "en": "Initial GitHub/npm community release; added info.connection state; switched to MIT license; full ioBroker developer guide compliance",
-                "de": "Erste GitHub/npm Community-Veröffentlichung; info.connection-Status hinzugefügt; auf MIT-Lizenz umgestellt; vollständige ioBroker-Entwicklerrichtlinien-Konformität",
-                "ru": "Первый релиз на GitHub/npm; добавлено состояние info.connection; лицензия MIT; соответствие руководству разработчика ioBroker",
-                "pt": "Primeiro lançamento no GitHub/npm; estado info.connection adicionado; licença MIT; conformidade com o guia do desenvolvedor ioBroker",
-                "nl": "Eerste GitHub/npm community release; info.connection state toegevoegd; MIT-licentie; ioBroker developer guide conformiteit",
-                "fr": "Première version GitHub/npm; état info.connection ajouté; licence MIT; conformité au guide développeur ioBroker",
-                "it": "Prima release GitHub/npm; stato info.connection aggiunto; licenza MIT; conformità alla guida per sviluppatori ioBroker",
-                "es": "Primera versión GitHub/npm; estado info.connection añadido; licencia MIT; cumplimiento de la guía del desarrollador ioBroker",
-                "pl": "Pierwsze wydanie GitHub/npm; dodano stan info.connection; licencja MIT; zgodność z przewodnikiem programisty ioBroker",
-                "uk": "Перший реліз GitHub/npm; додано стан info.connection; ліцензія MIT; відповідність керівництву розробника ioBroker",
-                "zh-cn": "首次 GitHub/npm 社区发布；添加 info.connection 状态；切换至 MIT 许可证；完全符合 ioBroker 开发者指南"
-            }
-        },
-        "titleLang": {
-            "en": "QuestDB",
-            "de": "QuestDB",
-            "ru": "QuestDB",
-            "pt": "QuestDB",
-            "nl": "QuestDB",
-            "fr": "QuestDB",
-            "it": "QuestDB",
-            "es": "QuestDB",
-            "pl": "QuestDB",
-            "uk": "QuestDB",
-            "zh-cn": "QuestDB"
-        },
-        "desc": {
-            "en": "Stores ioBroker state history in a QuestDB time-series database. Each enabled datapoint gets its own QuestDB table, written via the InfluxDB Line Protocol (ILP) over HTTP, HTTPS, or TCP.",
-            "de": "Speichert den ioBroker-Statusverlauf in einer QuestDB-Zeitreihendatenbank. Jeder aktivierte Datenpunkt erhält seine eigene QuestDB-Tabelle, die über das InfluxDB Line Protocol (ILP) über HTTP, HTTPS oder TCP geschrieben wird.",
-            "ru": "Сохраняет историю состояний ioBroker в базе данных временных рядов QuestDB.",
-            "pt": "Armazena o histórico de estado do ioBroker em um banco de dados de série temporal QuestDB.",
-            "nl": "Slaat de statusgeschiedenis van ioBroker op in een QuestDB tijdreeksdatabase.",
-            "fr": "Stocke l'historique de l'état d'ioBroker dans une base de données de séries temporelles QuestDB.",
-            "it": "Memorizza la cronologia dello stato di ioBroker in un database di serie temporali QuestDB.",
-            "es": "Almacena el historial del estado de ioBroker en una base de datos de series temporales QuestDB.",
-            "pl": "Przechowuje historię stanu ioBroker w bazie danych szeregów czasowych QuestDB.",
-            "uk": "Зберігає історію стану ioBroker у базі даних часових рядів QuestDB.",
-            "zh-cn": "将 ioBroker 状态历史记录存储在 QuestDB 时间序列数据库中。"
-        },
-        "authors": [
-            "pva2007 <github@valicek.de>"
-        ],
-        "keywords": [
-            "time-series",
-            "questdb",
-            "iot",
-            "history",
-            "storage"
-        ],
-        "licenseInformation": {
-            "type": "free",
-            "license": "MIT"
-        },
-        "platform": "Javascript/Node.js",
-        "icon": "questdb.png",
-        "enabled": true,
-        "extIcon": "https://raw.githubusercontent.com/pva2007/ioBroker.questdb/main/admin/questdb.png",
-        "readme": "https://github.com/pva2007/ioBroker.questdb/blob/main/README.md",
-        "loglevel": "info",
-        "tier": 3,
-        "mode": "daemon",
-        "type": "storage",
-        "compact": true,
-        "supportCustoms": true,
-        "connectionType": "local",
-        "dataSource": "push",
-        "messagebox": true,
-        "adminUI": {
-            "config": "json",
-            "custom": "json"
-        },
-        "encryptedNative": ["password"],
-        "protectedNative": ["password"],
-        "dependencies": [
-            {
-                "js-controller": ">=6.0.11"
-            }
-        ],
-        "globalDependencies": [
-            {
-                "admin": ">=7.6.20"
-            }
-        ]
+  "common": {
+    "name": "questdb",
+    "version": "0.3.6",
+    "news": {
+      "0.3.6": {
+        "en": "Fix Test Connection crash when message payload is null; send current form values to adapter for testing",
+        "de": "Absturz bei Test Connection behoben wenn Payload null ist; aktuelle Formularwerte werden zum Test an den Adapter übermittelt",
+        "ru": "Исправлен сбой Test Connection при null payload; текущие значения формы передаются адаптеру для теста",
+        "pt": "Correção de crash no Test Connection quando payload é null; valores do formulário enviados ao adaptador",
+        "nl": "Crash bij Test Connection opgelost bij null payload; huidige formulierwaarden worden naar adapter gestuurd",
+        "fr": "Correction du crash Test Connection quand le payload est null ; valeurs du formulaire envoyées à l'adaptateur",
+        "it": "Correzione crash Test Connection con payload null; valori del form inviati all'adapter per il test",
+        "es": "Corrección de crash en Test Connection con payload null; valores del formulario enviados al adaptador",
+        "pl": "Naprawa awarii Test Connection przy null payload; wartości formularza wysyłane do adaptera",
+        "uk": "Виправлення збою Test Connection при null payload; поточні значення форми передаються адаптеру",
+        "zh-cn": "修复 Test Connection 在 payload 为 null 时崩溃；将表单当前值发送至适配器进行测试"
+      },
+      "0.3.4": {
+        "en": "Fix npm publish: pass npm-token to testing-action-deploy",
+        "de": "npm-Veröffentlichung korrigiert: npm-token an testing-action-deploy übergeben",
+        "ru": "Исправлена публикация npm: передача npm-token в testing-action-deploy",
+        "pt": "Correção da publicação npm: passar npm-token para testing-action-deploy",
+        "nl": "npm-publicatie hersteld: npm-token doorgeven aan testing-action-deploy",
+        "fr": "Correction de la publication npm : passer npm-token à testing-action-deploy",
+        "it": "Correzione pubblicazione npm: passare npm-token a testing-action-deploy",
+        "es": "Corrección de publicación npm: pasar npm-token a testing-action-deploy",
+        "pl": "Naprawa publikacji npm: przekazanie npm-token do testing-action-deploy",
+        "uk": "Виправлення публікації npm: передача npm-token до testing-action-deploy",
+        "zh-cn": "修复 npm 发布：将 npm-token 传递给 testing-action-deploy"
+      }
     },
-    "native": {
-        "host": "localhost",
-        "port": 9000,
-        "protocol": "http",
-        "username": "",
-        "password": "",
-        "dbWriteTimeout": 10000,
-        "writeOnlyAcknowledged": true,
-        "debounceMs": 0,
-        "maxBatchSize": 1000,
-        "flushIntervalMs": 5000,
-        "reconnectIntervalMs": 30000,
-        "tableMappings": [],
-        "insecureTls": false
+    "titleLang": {
+      "en": "QuestDB",
+      "de": "QuestDB",
+      "ru": "QuestDB",
+      "pt": "QuestDB",
+      "nl": "QuestDB",
+      "fr": "QuestDB",
+      "it": "QuestDB",
+      "es": "QuestDB",
+      "pl": "QuestDB",
+      "uk": "QuestDB",
+      "zh-cn": "QuestDB"
     },
-    "objects": [],
-    "instanceObjects": [
-        {
-            "_id": "info",
-            "type": "channel",
-            "common": {
-                "name": "Information"
-            },
-            "native": {}
-        },
-        {
-            "_id": "info.connection",
-            "type": "state",
-            "common": {
-                "role": "indicator.connected",
-                "name": "Connected to QuestDB",
-                "type": "boolean",
-                "read": true,
-                "write": false,
-                "def": false
-            },
-            "native": {}
-        }
+    "desc": {
+      "en": "Stores ioBroker state history in a QuestDB time-series database. Each enabled datapoint gets its own QuestDB table, written via the InfluxDB Line Protocol (ILP) over HTTP, HTTPS, or TCP.",
+      "de": "Speichert den ioBroker-Statusverlauf in einer QuestDB-Zeitreihendatenbank. Jeder aktivierte Datenpunkt erhält seine eigene QuestDB-Tabelle, die über das InfluxDB Line Protocol (ILP) über HTTP, HTTPS oder TCP geschrieben wird.",
+      "ru": "Сохраняет историю состояний ioBroker в базе данных временных рядов QuestDB.",
+      "pt": "Armazena o histórico de estado do ioBroker em um banco de dados de série temporal QuestDB.",
+      "nl": "Slaat de statusgeschiedenis van ioBroker op in een QuestDB tijdreeksdatabase.",
+      "fr": "Stocke l'historique de l'état d'ioBroker dans une base de données de séries temporelles QuestDB.",
+      "it": "Memorizza la cronologia dello stato di ioBroker in un database di serie temporali QuestDB.",
+      "es": "Almacena el historial del estado de ioBroker en una base de datos de series temporales QuestDB.",
+      "pl": "Przechowuje historię stanu ioBroker w bazie danych szeregów czasowych QuestDB.",
+      "uk": "Зберігає історію стану ioBroker у базі даних часових рядів QuestDB.",
+      "zh-cn": "将 ioBroker 状态历史记录存储在 QuestDB 时间序列数据库中。"
+    },
+    "authors": ["pva2007 <github@valicek.de>"],
+    "keywords": ["time-series", "questdb", "iot", "history", "storage"],
+    "licenseInformation": {
+      "type": "free",
+      "license": "MIT"
+    },
+    "platform": "Javascript/Node.js",
+    "icon": "questdb.png",
+    "enabled": true,
+    "extIcon": "https://raw.githubusercontent.com/pva2007/ioBroker.questdb/main/admin/questdb.png",
+    "readme": "https://github.com/pva2007/ioBroker.questdb/blob/main/README.md",
+    "loglevel": "info",
+    "tier": 3,
+    "mode": "daemon",
+    "type": "storage",
+    "compact": true,
+    "supportCustoms": true,
+    "connectionType": "local",
+    "dataSource": "push",
+    "messagebox": true,
+    "adminUI": {
+      "config": "json",
+      "custom": "json"
+    },
+    "dependencies": [
+      {
+        "js-controller": ">=6.0.11"
+      }
+    ],
+    "globalDependencies": [
+      {
+        "admin": ">=7.6.20"
+      }
     ]
+  },
+  "native": {
+    "host": "localhost",
+    "port": 9000,
+    "protocol": "http",
+    "username": "",
+    "password": "",
+    "dbWriteTimeout": 10000,
+    "writeOnlyAcknowledged": true,
+    "debounceMs": 0,
+    "maxBatchSize": 1000,
+    "flushIntervalMs": 5000,
+    "reconnectIntervalMs": 30000,
+    "tableMappings": [],
+    "insecureTls": false
+  },
+  "encryptedNative": ["password"],
+  "protectedNative": ["password"],
+  "objects": [],
+  "instanceObjects": [
+    {
+      "_id": "info",
+      "type": "channel",
+      "common": {
+        "name": "Information"
+      },
+      "native": {}
+    },
+    {
+      "_id": "info.connection",
+      "type": "state",
+      "common": {
+        "role": "indicator.connected",
+        "name": "Connected to QuestDB",
+        "type": "boolean",
+        "read": true,
+        "write": false,
+        "def": false
+      },
+      "native": {}
+    }
+  ]
 }
